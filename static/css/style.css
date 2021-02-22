@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Playball');
+
+body {
+  background: url('https://www.subtlepatterns.com/patterns/brickwall.png');
+  background-size: 20%;
+}
+#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+}
+#logo:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content:"Today's Lucky Selection";
+  position: absolute;
+  top: 32px;
+}
+#logo:after {
+  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
+.frame {
+  margin:50px auto;
+  border:25px solid #222;
+  height:375px;
+  width:350px;
+  -webkit-box-shadow:  px 2px 3px 1px rgba(0, 0, 0, .7);
+  box-shadow:  0px 3px 20px 10px rgba(0, 0, 0, .5);
+}
+
+.border {
+  background:white;
+  height:100%;
+  width:100%;
+  -webkit-box-shadow: inset 10px 10px 10px 4px rgba(0, 0, 0, .5);
+  box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, .4);
+}
+
+.image {
+  position:absolute;
+  height:225px;
+  width:225px;
+  margin-left:50px;
+  margin-top:50px;
+  -webkit-box-shadow: inset 10px 10px 10px 10px rgba(0, 0, 0, .6);
+  box-shadow: inset 3px 10px 2px 5px rgba(0, 0, 0, .1);
+  border:10px inset #c9c9c9;
+  /*filter: grayscale(100%);*/
+}
+.text {
+  position:absolute;
+  margin-top:520px;
+  font-family: 'Playball', cursive;
+  font-size:30px;
+  margin-left:85px;
+}
